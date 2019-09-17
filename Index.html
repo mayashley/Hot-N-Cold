@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>HotNCold</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
-  <body onload="getSecretNumber()">
-      <h1 id="output">Your guess will show up here</h1>
-      <input id="guess" />
-      <button onclick="guess()">click me!</button>
+  <div class= "center">
+  <body onload="getSecretNumber()" id="bodyid">
+      <h1 id="output">Try Me</h1>
+      <div class="list">
+          <h2>Hot-N-Cold</h2>
+          <ol>
+              <li>Choose a number between 1 and 100.</li>
+              <li>Submit your guess.</li>
+              <li>I'll let you know if you're: hot, cold or right on the money!</li>
+          </ol>
+      </div>
+    </div>
+    <div class="sidebyside">
+      <input type="text" id="guess" placeholder="number"/>
+      <button id="btn" onclick="guess()">Send It!!</button>
   <!-- Input, button to trigger function, output text element -->
-
+</div>
     <script src="code.js"></script> 
   </body>
 </html>
